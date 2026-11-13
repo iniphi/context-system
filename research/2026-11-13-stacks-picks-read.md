@@ -1,0 +1,15 @@
+# Five papers, read 2026-11-13
+
+Picked by a literature search on three questions (does the ETH result hold beyond coding agents; does start-up load size affect task success; is structured agent memory measured against flat notes). The five papers were read from their abstracts (arXiv and Semantic Scholar). What each says for the context system:
+
+1. **Gloaguen, Mündler, Müller, "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"** arXiv 2602.11988 (v3 read). Context files do not generally raise task success, for LLM-generated **and** developer-committed files, and add over 20% inference cost. Instructions in them are followed well; repository overviews do not help; they are useful for non-standard practices. **Correction:** the practitioner survey's "hand-written ones helped modestly" came from secondary summaries and does not match v3. For us: the rule "write what happened and what was decided, never a summary of what the files show" stands, more firmly.
+
+2. **Chatlatanagulchai, Li, Kashiwa, "Agent READMEs: An Empirical Study of Context Files for Agentic Coding."** doi:10.1145/3840295 (arXiv 2511.12884). 2,303 context files from 1,925 repos: they evolve like configuration code through frequent small additions and become hard to read; mostly test procedures, implementation details, architecture; security and performance rarely stated. For us: growth by accretion is the failure the size caps in `build_index.py --check` exist for.
+
+3. **dos Santos, Costa, Montandon, "Configuration Smells in AGENTS.md Files."** doi:10.1109/SCAM71261.2026.00028 (arXiv 2606.15828). Six smells in 100 popular repos: Lint Leakage 62% (style rules a linter should enforce), Context Bloat 42% (smallest flagged file 216 lines), Skill Leakage 35% (step-by-step procedures that belong in a skill), Blind Reference, Init Fossilization (a file never updated after its first commit), Conflicting Instructions. Bloat, Skill Leakage and Conflicting Instructions co-occur. For us: the kit's `AGENTS.md` repeats the close procedure that `close/SKILL.md` holds, which is Skill Leakage by this definition. It is there on purpose, for agents with no skill system, but two copies can drift into Conflicting Instructions. Open question for the design.
+
+4. **Liu et al., "Lost in the Middle: How Language Models Use Long Contexts."** TACL 2024, doi:10.1162/tacl_a_00638. Performance is highest when the relevant information sits at the start or end of the context and falls in the middle. For us: keep the start-up load short and put what matters first.
+
+5. **Xia, Wang, Huang, "Diagnosing and Mitigating Context Rot in Long-horizon Search."** arXiv 2606.29718. Under long context, models give up or answer uncertainly well before the window is full; context management works by lowering peak context length. For us: supports loading little up front and fetching on demand.
+
+Not answered: question 3 (structured agent memory measured against flat notes or retrieval) got two queries and no picks; the citation chase from 2602.11988 failed with an HTTP error.

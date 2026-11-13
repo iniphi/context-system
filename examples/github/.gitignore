@@ -1,0 +1,11 @@
+# Keys and local settings: never committed
+.env
+.env.*
+!.env.example
+
+# Python and editors
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.obsidian/workspace*.json
