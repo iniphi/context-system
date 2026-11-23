@@ -1,6 +1,6 @@
 # The chat-only version
 
-For any AI chat that can read this page, with nothing installed and nothing connected. The person is the store: you give them a **save block** at the end of each session, they keep it, and they paste it back at the start of the next. If their chat can connect to GitHub, Notion or Google Drive, the full version saves for them instead (see the README); you can tell them so once, then carry on.
+For any AI chat that can read this page, with nothing installed and nothing connected. The person is the store: you give them a **save block** at the end of each session, they keep it, and they paste it back at the start of the next. If their chat can connect to GitHub, Notion or Google Drive, the full version saves for them instead (see the README); you can tell them so once, then carry on. If they take the full version, build it from `examples/github/` (its layout and its start and close routines), not a layout of your own.
 
 ## To the AI reading this
 
@@ -8,8 +8,8 @@ You are setting up a context system for the person you are talking to, so that n
 
 ### First time (they have no save block yet)
 
-1. Tell them, in three lines at most: you will help them keep where they left off between chats; at the end of each session you will give them a block of text to keep; next time they paste it back and you pick up from there.
-2. Ask what this is for. Offer these, and take their own words if none fits:
+1. Tell them, in three lines at most: you will help them keep where they left off between chats; at the end of each session you will give them a block of text to keep; next time they paste it back and you pick up from there. Nothing else comes before step 2: no overview, no headings.
+2. Ask what this is for, in one line. Offer these, and take their own words if none fits:
    - **Focus**: keeping one thing moving without starting over each time
    - **A scattered brain**: many threads at once, losing track of what is in flight
    - **Writing**: pieces from first idea to finished draft
@@ -18,8 +18,8 @@ You are setting up a context system for the person you are talking to, so that n
    - **A project**: one piece of work with a goal
    If they pick several, ask which comes first, and set up for that one only.
 3. Ask, one at a time: what they do, in a line; what they are working on now; what "done" would look like; how they like things explained.
-4. Ask where they will keep the save block. Suggest, in order: the chat app's own project or custom instructions (it then loads by itself); a note on their phone; a document. Any of them works.
-5. Write the first save block (format below) in one code block, and ask them to copy it to that place and tell you when it is saved.
+4. Ask whether this is their only project, or one of several. Then ask where they will keep the save block. Suggest, in order: a **front door** in their chat app, so that opening it starts the session with nothing pasted (a Project with instructions in ChatGPT or Claude, a Gem in Gemini, a custom GPT, or a Claude skill they call by name); a note on their phone; a document. If they have several projects, recommend one front door per project, each named after it, so they can start any one by name. Any of these works.
+5. Write the first save block (format below) in one code block, and ask them to copy it to that place and tell you when it is saved. If they chose a front door, also give them its name and the one line to put in its instructions: "At the start of every chat, follow the 'Every later session' steps in https://raw.githubusercontent.com/iniphi/context-system/main/solo/chat.md using the save block below." Do not claim you created it; they create it, and it does not exist until they say so.
 6. Then ask what they want from today, and begin with the smallest useful step.
 
 ### Every later session (they paste a save block, or it is already loaded)
@@ -44,6 +44,7 @@ Keep the block under about 60 lines. If it grows past that, ask what can go.
 
 ```
 CONTEXT SAVE - <their name or handle> - updated <YYYY-MM-DD>
+To the AI: say back in three lines where I am and the next step, mention anything due soon, then ask what I want from this session. Do no work until I answer. At the end, give me this block rewritten.
 For: <purpose> ("<their own words>")
 Kept in: <where they keep this block>
 

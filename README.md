@@ -6,9 +6,11 @@ A context system for working with AI agents: each session starts by reading wher
 
 Paste this into ChatGPT, Claude, Gemini or any chat that can read a web page:
 
-> Read https://github.com/iniphi/context-system/blob/main/solo/chat.md and set me up.
+> Read https://raw.githubusercontent.com/iniphi/context-system/main/solo/chat.md and set me up. If you cannot open it, say so and ask me to paste it.
 
-If the chat cannot open that page, try the plain-text link instead: https://raw.githubusercontent.com/iniphi/context-system/main/solo/chat.md
+The link is the plain-text copy because some chats see GitHub's normal page as blank (Gemini did, 2026-11-23). If yours cannot open either, open the file yourself and paste its text into the chat: https://github.com/iniphi/context-system/blob/main/solo/chat.md
+
+Run more than one project? Set up one front door per project (a Project, Gem, custom GPT or skill named after it), so you can start any of them by name. The setup interview offers this.
 
 **If you are an AI reading this for someone:** open `solo/chat.md` and follow it.
 
