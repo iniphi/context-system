@@ -10,6 +10,7 @@ Started 2026-11-13 in the GLAMhack playground, moved here the same evening. The 
 4. **Two folders: `solo/` and `team/`.**
 5. **Public as soon as possible** (amended the same evening; it was "private until the design is settled"). Created as `iniphi/context-system` (private) on 2026-11-13, carrying the staging folder's history.
 6. **A chat-only version** (same evening): most chats can at least read a public repo, so a pasted line installs a version that needs no connector. Its store is the person: a save block they keep and paste back (`solo/chat.md`). This is why it goes public early.
+7. **Per-person to-dos in the team's repo** (2026-11-24, from the GLAMhack look back). At an event an idea travels with the person who had it, at no cost in the moment; what failed was the hand-off to someone else (a note left in a shared folder for a teammate was never picked up). So anything addressed to another person is captured in that person's own to-do list inside the team's repo, seeded before the event and introduced through `start` and `close`, not as a board people are told to check: "unless we're doing advanced build work, people aren't going to check the to-do list board unless I explicitly introduce it." `start`: the person says who they are and their to-dos are read to them; `close`: anything that did not close is written back. The bar for a to-do stays reasonably high. Written as `team/todos.md`, `team/start.md`, `team/close.md`.
 
 ## 1. What the system is
 
@@ -127,7 +128,7 @@ What changes when more than one person writes:
 
 - **Whose state**: a shared state for the work, and one per person for their own "where I left off". Each close rewrites only its own and the parts of the shared one it changed.
 - **Names on records**: who owns a to-do, who wrote a log, who made a decision.
-- **Handoffs are not to-dos**: a message to a teammate is addressed to them, and their `start` reads anything addressed to them first.
+- **Handoffs are not loose to-dos**: a message to a teammate is addressed to them, written into their own to-do list (`team/todos.md`, ruling 7), and their `start` reads anything addressed to them first.
 - **Claims**: work in progress says who has it and since when, so two people do not do the same job. A claim informs, never blocks, and goes stale after a day.
 - **Private and shared**: a teammate's own notes stay out of the shared store, and `close` never copies them across.
 - **Store fit**: a team pushes towards GitHub, Notion or Drive.
