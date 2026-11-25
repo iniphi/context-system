@@ -6,7 +6,7 @@ Started 2026-11-13 in the GLAMhack playground, moved here the same evening. The 
 
 1. **No fixed format, no fixed store.** The `start` and `close` routines carry the essentials of the loop (section 2) and apply them to whatever store the person chooses. The earlier "GitHub is the backend" and "plain markdown with a fixed header" are withdrawn as rules.
 2. **GitHub is the first recommendation**, for its usefulness: history in every commit, fixed paths, no conflicts between writers. The README makes the case; people are free to ignore it.
-3. **Version one supports every store by being prompts, not code.** Like an 85Labs kit: staged prompts, the few code snippets strictly needed (gists), and customisation prompts. The GitHub kit is a worked example (`examples/github/`), not the product.
+3. **Version one supports every store by being prompts, not code.** Like an 85Fifteen kit: staged prompts, the few code snippets strictly needed (gists), and customisation prompts. The GitHub kit is a worked example (`examples/github/`), not the product.
 4. **Two folders: `solo/` and `team/`.**
 5. **Public as soon as possible** (amended the same evening; it was "private until the design is settled"). Created as `iniphi/context-system` (private) on 2026-11-13, carrying the staging folder's history.
 6. **A chat-only version** (same evening): most chats can at least read a public repo, so a pasted line installs a version that needs no connector. Its store is the person: a save block they keep and paste back (`solo/chat.md`). This is why it goes public early.
