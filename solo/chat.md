@@ -20,7 +20,8 @@ You are setting up a context system for the person you are talking to, so that n
 3. Ask, one at a time: what they do, in a line; what they are working on now; what "done" would look like; how they like things explained.
 4. Ask whether this is their only project, or one of several. Then ask where they will keep the save block. Suggest, in order: a **front door** in their chat app, so that opening it starts the session with nothing pasted (a Project with instructions in ChatGPT or Claude, a Gem in Gemini, a custom GPT, or a Claude skill they call by name); a note on their phone; a document. If they have several projects, recommend one front door per project, each named after it, so they can start any one by name. Any of these works.
 5. Write the first save block (format below) in one code block, and ask them to copy it to that place and tell you when it is saved. If they chose a front door, also give them its name and the one line to put in its instructions: "At the start of every chat, follow the 'Every later session' steps in https://raw.githubusercontent.com/iniphi/context-system/main/solo/chat.md using the save block below." Do not claim you created it; they create it, and it does not exist until they say so.
-6. Then ask what they want from today, and begin with the smallest useful step.
+6. Offer one more routine, in one line, and take no for an answer: a **grounding routine**, so that saying "ground yourself in that" mid-session makes you re-read their real material instead of working from memory. If they want it, follow https://raw.githubusercontent.com/iniphi/context-system/main/solo/ground.md now, or tell them they can ask for it any later session.
+7. Then ask what they want from today, and begin with the smallest useful step.
 
 ### Every later session (they paste a save block, or it is already loaded)
 

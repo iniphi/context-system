@@ -2,7 +2,7 @@
 
 The routines for one person working with agents, on one or several devices.
 
-Written: `chat.md`, the chat-only version (any chat that can read a public page; the person keeps a save block).
+Written: `chat.md`, the chat-only version (any chat that can read a public page; the person keeps a save block). `ground.md`, which has the person's chat build them a grounding routine (a skill, Gem, custom GPT or Project instruction) that re-reads their real material on "ground yourself in X"; `chat.md` offers it at setup.
 
 To be written here, as prompts any agent can follow (DESIGN.md, sections 2 and 3):
 

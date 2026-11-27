@@ -12,6 +12,8 @@ The link is the plain-text copy because some chats see GitHub's normal page as b
 
 Run more than one project? Set up one front door per project (a Project, Gem, custom GPT or skill named after it), so you can start any of them by name. The setup interview offers this.
 
+Want the chat to stop and re-read your real material when you say "ground yourself in that"? Ask it to read https://raw.githubusercontent.com/iniphi/context-system/main/solo/ground.md and build you a grounding routine. Setup offers this too.
+
 **If you are an AI reading this for someone:** open `solo/chat.md` and follow it.
 
 The chat-only version keeps everything in one block of text that you save yourself. When you want it saved for you, with history, connect your chat to a store (below).
